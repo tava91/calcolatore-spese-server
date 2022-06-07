@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1654512245,
+		"firstName": "Emanuele",
+		"lastName": "Desiati",
+		"nickName": "Ema",
+		"eMail": "",
+		"password": "",
+		"avatar": ""
+	},
+	{
+		"id": 1654512605,
+		"firstName": "Pietro",
+		"lastName": "Gastaldo",
+		"nickName": "Gas",
+		"eMail": "",
+		"password": "",
+		"avatar": ""
+	},
+	{
+		"id": 1654509665,
+		"firstName": "Marco",
+		"lastName": "Tavarelli",
+		"nickName": "Tava",
+		"eMail": "",
+		"password": "",
+		"avatar": ""
+	},
+	{
+		"id": 1654510865,
+		"firstName": "Matteo",
+		"lastName": "Morlacchi",
+		"nickName": "Morlack",
+		"eMail": "",
+		"password": "",
+		"avatar": ""
+	}
+]
