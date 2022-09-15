@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="http://localhost:8080/server.js" method="POST">
+    <input type="text" placeholder="email" name="email"><br>
+    <input type="text" placeholder="password" name="password"><br>
+    <input type="text" placeholder="codice postale" name="postalCode"><br>
+    <button id="submit">Login</button>
+  </form>
+  <ul id="cartItemsList"></ul>
+  <script>
+    document.getElementById('submit').addEventListener('click', e => {
+      e.preventDefault();
+      let obj = {
+        email: document.querySelector('[name="email"]').value,
+        password: document.querySelector('[name="password"]').value,
+        password: document.querySelector('[name="postalCode"]').value,
+      }
+      fetch("http://localhost:8080/server", {
+        data: JSON.stringify({ obj })
+      })
+        .then(res => res.json)
+        .then(data => {
+          debugger;
+          document.getElementById('cartItemsList').innerHTML = `<li>${data}</li>`
+        })
+        .catch(error => alert(`${error}`))
+    })
+  </script>
+</body>
+
+
+</html>
